@@ -1,18 +1,18 @@
-@prefix : <http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/> .
+@prefix : <https://w3id.org/def/data-explainbility-ontology/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/> .
+@base <https://w3id.org/def/data-explainbility-ontology/> .
 
-<http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology> rdf:type owl:Ontology ;
-                                                                                             owl:versionIRI <http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/0.1> ;
-                                                                                             dct:abstract "An ontology collecting concepts that are related to data explainability"@en ;
-                                                                                             dct:description "This is an ontology covering data explainability and related concepts that improve or adviseray to it."@en ;
-                                                                                             dct:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
-                                                                                             dct:title "Data Explainability Ontology"@en .
+<https://w3id.org/def/data-explainbility-ontology> rdf:type owl:Ontology ;
+                                                    owl:versionIRI <https://w3id.org/def/data-explainbility-ontology/1.0> ;
+                                                    dct:abstract "An ontology collecting concepts that are related to data explainability"@en ;
+                                                    dct:description "This is an ontology covering data explainability and related concepts that improve or adviseray to it."@en ;
+                                                    dct:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+                                                    dct:title "Data Explainability Ontology"@en .
 
 #################################################################
 #    Annotation properties
@@ -46,7 +46,7 @@ dct:title rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/contributesTo
+###  https://w3id.org/def/data-explainbility-ontology/contributesTo
 :contributesTo rdf:type owl:ObjectProperty ;
                owl:inverseOf :isRealizedBy ;
                rdf:type owl:TransitiveProperty ;
@@ -68,7 +68,7 @@ dct:title rdf:type owl:AnnotationProperty .
                rdfs:comment "This property is used whenever A contributes something to B."@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/dictates
+###  https://w3id.org/def/data-explainbility-ontology/dictates
 :dictates rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :guides ;
           owl:inverseOf :isDictatedBy ;
@@ -78,7 +78,7 @@ dct:title rdf:type owl:AnnotationProperty .
           rdfs:comment "Dictates is a special form of guides that is stronger making the guidelines mandatory"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/employs
+###  https://w3id.org/def/data-explainbility-ontology/employs
 :employs rdf:type owl:ObjectProperty ;
          owl:inverseOf :isEmployedBy ;
          rdf:type owl:TransitiveProperty ;
@@ -96,7 +96,7 @@ dct:title rdf:type owl:AnnotationProperty .
          rdfs:comment "This property is used whenever A uses and therfore employs B"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/guides
+###  https://w3id.org/def/data-explainbility-ontology/guides
 :guides rdf:type owl:ObjectProperty ;
         owl:inverseOf :isGuidedBy ;
         rdf:type owl:IrreflexiveProperty ;
@@ -113,7 +113,7 @@ dct:title rdf:type owl:AnnotationProperty .
         rdfs:comment "This property is used when A provides guidelines for B"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/hinders
+###  https://w3id.org/def/data-explainbility-ontology/hinders
 :hinders rdf:type owl:ObjectProperty ;
          owl:inverseOf :isHinderedBy ;
          rdf:type owl:IrreflexiveProperty ;
@@ -133,7 +133,7 @@ dct:title rdf:type owl:AnnotationProperty .
          rdfs:comment "This propery is used whenever A makes it more difficult to achieve B."@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/identifies
+###  https://w3id.org/def/data-explainbility-ontology/identifies
 :identifies rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :produces ;
             owl:inverseOf :isIdentifiedBy ;
@@ -151,7 +151,7 @@ dct:title rdf:type owl:AnnotationProperty .
             rdfs:comment "This property is used when A makes B discoverable pointing directly at it"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isDictatedBy
+###  https://w3id.org/def/data-explainbility-ontology/isDictatedBy
 :isDictatedBy rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :isGuidedBy ;
               rdfs:domain :PrivacyPreservingDataAnalysis ;
@@ -159,7 +159,7 @@ dct:title rdf:type owl:AnnotationProperty .
               rdfs:comment "The reverse of dictates"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isEmployedBy
+###  https://w3id.org/def/data-explainbility-ontology/isEmployedBy
 :isEmployedBy rdf:type owl:ObjectProperty ,
                        owl:TransitiveProperty ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -176,7 +176,7 @@ dct:title rdf:type owl:AnnotationProperty .
               rdfs:comment "The reverse of employs" .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isGuidedBy
+###  https://w3id.org/def/data-explainbility-ontology/isGuidedBy
 :isGuidedBy rdf:type owl:ObjectProperty ,
                      owl:IrreflexiveProperty ;
             rdfs:domain [ rdf:type owl:Class ;
@@ -192,7 +192,7 @@ dct:title rdf:type owl:AnnotationProperty .
             rdfs:comment "The reverse of guides"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isHinderedBy
+###  https://w3id.org/def/data-explainbility-ontology/isHinderedBy
 :isHinderedBy rdf:type owl:ObjectProperty ;
               rdfs:domain [ rdf:type owl:Class ;
                             owl:unionOf ( :DataExplainability
@@ -210,7 +210,7 @@ dct:title rdf:type owl:AnnotationProperty .
               rdfs:comment "The reverse of hinders"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isIdentifiedBy
+###  https://w3id.org/def/data-explainbility-ontology/isIdentifiedBy
 :isIdentifiedBy rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :isProducedBy ;
                 rdf:type owl:IrreflexiveProperty ;
@@ -227,7 +227,7 @@ dct:title rdf:type owl:AnnotationProperty .
                 rdfs:comment "The reverse of idetnfies"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isMitigatedBy
+###  https://w3id.org/def/data-explainbility-ontology/isMitigatedBy
 :isMitigatedBy rdf:type owl:ObjectProperty ;
                owl:inverseOf :mitigates ;
                rdf:type owl:AsymmetricProperty ,
@@ -245,7 +245,7 @@ dct:title rdf:type owl:AnnotationProperty .
                rdfs:comment "The reverse of mitigates"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isPrecededBy
+###  https://w3id.org/def/data-explainbility-ontology/isPrecededBy
 :isPrecededBy rdf:type owl:ObjectProperty ;
               owl:inverseOf :precedes ;
               rdf:type owl:TransitiveProperty ;
@@ -263,7 +263,7 @@ dct:title rdf:type owl:AnnotationProperty .
               rdfs:comment "The reverse of precedes" .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isProducedBy
+###  https://w3id.org/def/data-explainbility-ontology/isProducedBy
 :isProducedBy rdf:type owl:ObjectProperty ;
               owl:inverseOf :produces ;
               rdf:type owl:IrreflexiveProperty ;
@@ -272,7 +272,7 @@ dct:title rdf:type owl:AnnotationProperty .
               rdfs:comment "Meaning the domain is a physical result of the domain, not something abstract"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/isRealizedBy
+###  https://w3id.org/def/data-explainbility-ontology/isRealizedBy
 :isRealizedBy rdf:type owl:ObjectProperty ,
                        owl:TransitiveProperty ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -294,7 +294,7 @@ dct:title rdf:type owl:AnnotationProperty .
 In contrast isProducedBy points to more phyiscal results so something that can acutally be used""" .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/mitigates
+###  https://w3id.org/def/data-explainbility-ontology/mitigates
 :mitigates rdf:type owl:ObjectProperty ,
                     owl:AsymmetricProperty ,
                     owl:IrreflexiveProperty ;
@@ -310,7 +310,7 @@ In contrast isProducedBy points to more phyiscal results so something that can a
                       ] .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/precedes
+###  https://w3id.org/def/data-explainbility-ontology/precedes
 :precedes rdf:type owl:ObjectProperty ,
                    owl:TransitiveProperty ;
           rdfs:domain [ rdf:type owl:Class ;
@@ -327,7 +327,7 @@ In contrast isProducedBy points to more phyiscal results so something that can a
           rdfs:comment "This property is used when A comes before B"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/produces
+###  https://w3id.org/def/data-explainbility-ontology/produces
 :produces rdf:type owl:ObjectProperty ,
                    owl:IrreflexiveProperty ;
           rdfs:domain :Methodology ;
@@ -339,33 +339,33 @@ In contrast isProducedBy points to more phyiscal results so something that can a
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology#hasCreationDate
+###  https://w3id.org/def/data-explainbility-ontology/hasCreationDate
 :hasCreationDate rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :DataProvenance ;
                  rdfs:range xsd:dateTimeStamp .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology#hasFileFormat
+###  https://w3id.org/def/data-explainbility-ontology/hasFileFormat
 :hasFileFormat rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :DatasetDescription ;
                rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology#hasMean
+###  https://w3id.org/def/data-explainbility-ontology/hasMean
 :hasMean rdf:type owl:DatatypeProperty ;
          rdfs:domain :StatisticalCharacterisation ;
          rdfs:range xsd:float .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology#hasMedian
+###  https://w3id.org/def/data-explainbility-ontology/hasMedian
 :hasMedian rdf:type owl:DatatypeProperty ;
            rdfs:domain :StatisticalCharacterisation ;
            rdfs:range xsd:float .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology#hasStandardDeviation
+###  https://w3id.org/def/data-explainbility-ontology/hasStandardDeviation
 :hasStandardDeviation rdf:type owl:DatatypeProperty ;
                       rdfs:domain :StatisticalCharacterisation ;
                       rdfs:range xsd:float .
@@ -375,7 +375,7 @@ In contrast isProducedBy points to more phyiscal results so something that can a
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Accesible
+###  https://w3id.org/def/data-explainbility-ontology/Accesible
 :Accesible rdf:type owl:Class ;
            rdfs:subClassOf :FAIR ;
            rdfs:comment """Once the user finds the required data, they need to know how they can be accessed.
@@ -384,21 +384,21 @@ Additionally, the metadata should stay available even if the data are no longer 
            rdfs:label "Accesible"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Accountability
+###  https://w3id.org/def/data-explainbility-ontology/Accountability
 :Accountability rdf:type owl:Class ;
                 rdfs:subClassOf :Governance ;
                 rdfs:comment "Accountability is about the responsibility of individuals or organizations for their actions regarding data"@en ;
                 rdfs:label "Accountability"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/AdversarialBias
+###  https://w3id.org/def/data-explainbility-ontology/AdversarialBias
 :AdversarialBias rdf:type owl:Class ;
                  rdfs:subClassOf :Biases ;
                  rdfs:comment "Adversial bias is bias that is introduced on purpose, often done with malicious intent."@en ;
                  rdfs:label "Adversarial Bias"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Anomalies
+###  https://w3id.org/def/data-explainbility-ontology/Anomalies
 :Anomalies rdf:type owl:Class ;
            rdfs:subClassOf :Characterization ,
                            [ rdf:type owl:Restriction ;
@@ -426,7 +426,7 @@ Additionally, the metadata should stay available even if the data are no longer 
            rdfs:label "Anomalies"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Biases
+###  https://w3id.org/def/data-explainbility-ontology/Biases
 :Biases rdf:type owl:Class ;
         rdfs:subClassOf :Characterization ,
                         [ rdf:type owl:Restriction ;
@@ -443,48 +443,48 @@ Additionally, the metadata should stay available even if the data are no longer 
         rdfs:label "Biases"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Characterization
+###  https://w3id.org/def/data-explainbility-ontology/Characterization
 :Characterization rdf:type owl:Class ;
                   rdfs:comment "Elements that help characterize data, like findings of analysis and other kinds of artifacts."@en ;
                   rdfs:label "Characterization"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Clustering
+###  https://w3id.org/def/data-explainbility-ontology/Clustering
 :Clustering rdf:type owl:Class ;
             rdfs:subClassOf :DatasetSummarization ;
             rdfs:comment "Clustering bundles data points that are similiar in a way using only a single one mostly the center of the cluster" ;
             rdfs:label "Clustering"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Context-WiseAnomalies
+###  https://w3id.org/def/data-explainbility-ontology/Context-WiseAnomalies
 :Context-WiseAnomalies rdf:type owl:Class ;
                        rdfs:subClassOf :Anomalies ;
                        rdfs:comment "Context-wise anomalies are larger groups of point that deviate from the expected behavior"@en ;
                        rdfs:label "Context-Wise Anomalies"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataAudits
+###  https://w3id.org/def/data-explainbility-ontology/DataAudits
 :DataAudits rdf:type owl:Class ;
             rdfs:subClassOf :Methodology ;
             rdfs:comment "They can provide important information about metadata."@en ;
             rdfs:label "Data Audits"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataCards
+###  https://w3id.org/def/data-explainbility-ontology/DataCards
 :DataCards rdf:type owl:Class ;
            rdfs:subClassOf :DatasetDescription ;
            rdfs:comment "Data Cards are structured summaries of essential facts about various aspects of datasets needed by stakeholders across a project's lifecycle."@en ;
            rdfs:label "Data Cards"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataCleaning
+###  https://w3id.org/def/data-explainbility-ontology/DataCleaning
 :DataCleaning rdf:type owl:Class ;
               rdfs:subClassOf :DataManipulation ;
               rdfs:comment "Data cleaning describes the process of removing faulty or wrong data instances"@en ;
               rdfs:label "Data Cleaning"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataExplainability
+###  https://w3id.org/def/data-explainbility-ontology/DataExplainability
 :DataExplainability rdf:type owl:Class ;
                     rdfs:subClassOf [ rdf:type owl:Restriction ;
                                       owl:onProperty :contributesTo ;
@@ -508,49 +508,49 @@ Additionally, the metadata should stay available even if the data are no longer 
                     rdfs:label "Data Explainability"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataImputation
+###  https://w3id.org/def/data-explainbility-ontology/DataImputation
 :DataImputation rdf:type owl:Class ;
                 rdfs:subClassOf :DataManipulation ;
                 rdfs:comment "Data imputation is the process of fixing or adding missing data points by using the information of the other data points"@en ;
                 rdfs:label "Data Imputation"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataManipulation
+###  https://w3id.org/def/data-explainbility-ontology/DataManipulation
 :DataManipulation rdf:type owl:Class ;
                   rdfs:subClassOf :Methodology ;
                   rdfs:comment "Data manipulation are any methods that change the data in some way"@en ;
                   rdfs:label "Data Manipulation"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataMining
+###  https://w3id.org/def/data-explainbility-ontology/DataMining
 :DataMining rdf:type owl:Class ;
             rdfs:subClassOf :DataManipulation ;
             rdfs:comment "Data mining is the process of finding new features in an existing data set."@en ;
             rdfs:label "Data Mining"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataProvenance
+###  https://w3id.org/def/data-explainbility-ontology/DataProvenance
 :DataProvenance rdf:type owl:Class ;
                 rdfs:subClassOf :Governance ;
                 rdfs:comment "Data provenance refers to the origin and history of the data, including how it was collected, processed, and transformed"@en ;
                 rdfs:label "Data Provenance"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataSheets
+###  https://w3id.org/def/data-explainbility-ontology/DataSheets
 :DataSheets rdf:type owl:Class ;
             rdfs:subClassOf :DatasetDescription ;
             rdfs:comment "Data sheets are similar to data cards, but additionally to them also contain more information of for example the orign, recommended uses etc."@en ;
             rdfs:label "Data Sheets"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DataSquashing
+###  https://w3id.org/def/data-explainbility-ontology/DataSquashing
 :DataSquashing rdf:type owl:Class ;
                rdfs:subClassOf :DatasetSummarization ;
                rdfs:comment "Data squasing collapses multiple data points into one, using only the information of that single point"@en ;
                rdfs:label "Data Squashing"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DatasetDescription
+###  https://w3id.org/def/data-explainbility-ontology/DatasetDescription
 :DatasetDescription rdf:type owl:Class ;
                     rdfs:subClassOf :Characterization ,
                                     [ rdf:type owl:Restriction ;
@@ -561,27 +561,27 @@ Additionally, the metadata should stay available even if the data are no longer 
                     rdfs:label "Dataset Description"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DatasetSummarization
+###  https://w3id.org/def/data-explainbility-ontology/DatasetSummarization
 :DatasetSummarization rdf:type owl:Class ;
                       rdfs:subClassOf :Methodology ;
                       rdfs:comment "Dataset summarization are methods that somehow make the information of the dataset available in a quick overview"@en ;
                       rdfs:label "Dataset Summarization"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DimensonalityReduction
+###  https://w3id.org/def/data-explainbility-ontology/DimensonalityReduction
 :DimensonalityReduction rdf:type owl:Class ;
                         rdfs:subClassOf :DataManipulation ;
                         rdfs:comment "Dimensionality reduction is about reducing the dimension, so features of a data set" ;
                         rdfs:label "Dimensonality Reduction"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DomainSpecific
+###  https://w3id.org/def/data-explainbility-ontology/DomainSpecific
 :DomainSpecific rdf:type owl:Class ;
                 rdfs:subClassOf :FeatureEngineering ;
                 owl:disjointWith :ModelBased .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DomainSpecificFeatureCreation
+###  https://w3id.org/def/data-explainbility-ontology/DomainSpecificFeatureCreation
 :DomainSpecificFeatureCreation rdf:type owl:Class ;
                                owl:equivalentClass [ owl:intersectionOf ( :DomainSpecific
                                                                           :FeatureCreation
@@ -591,7 +591,7 @@ Additionally, the metadata should stay available even if the data are no longer 
                                rdfs:subClassOf :FeatureEngineering .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DomainSpecificFeatureExtraction
+###  https://w3id.org/def/data-explainbility-ontology/DomainSpecificFeatureExtraction
 :DomainSpecificFeatureExtraction rdf:type owl:Class ;
                                  owl:equivalentClass [ owl:intersectionOf ( :DomainSpecific
                                                                             :FeatureExtraction
@@ -601,7 +601,7 @@ Additionally, the metadata should stay available even if the data are no longer 
                                  rdfs:subClassOf :FeatureEngineering .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/DomainSpecificFeatureSelection
+###  https://w3id.org/def/data-explainbility-ontology/DomainSpecificFeatureSelection
 :DomainSpecificFeatureSelection rdf:type owl:Class ;
                                 owl:equivalentClass [ owl:intersectionOf ( :DomainSpecific
                                                                            :FeatureSelection
@@ -611,7 +611,7 @@ Additionally, the metadata should stay available even if the data are no longer 
                                 rdfs:subClassOf :FeatureEngineering .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/ExplainableEDA
+###  https://w3id.org/def/data-explainbility-ontology/ExplainableEDA
 :ExplainableEDA rdf:type owl:Class ;
                 rdfs:subClassOf :ExploratoryDataAnalysis ,
                                 [ rdf:type owl:Restriction ;
@@ -626,21 +626,21 @@ Additionally, the metadata should stay available even if the data are no longer 
                 rdfs:label "Explainable EDA"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/ExploratoryDataAnalysis
+###  https://w3id.org/def/data-explainbility-ontology/ExploratoryDataAnalysis
 :ExploratoryDataAnalysis rdf:type owl:Class ;
                          rdfs:subClassOf :Methodology ;
                          rdfs:comment "Exploratory data analysis, is the process of analysing the data to gain knowledge of the datasets features, like correlation, trends and other statistics"@en ;
                          rdfs:label "Exploratory Data Analysis"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/FAIR
+###  https://w3id.org/def/data-explainbility-ontology/FAIR
 :FAIR rdf:type owl:Class ;
       rdfs:subClassOf :Governance ;
       rdfs:comment "The FAIR principles stands for: Findability, Accountability, Interoperability, Reusablility"@en ;
       rdfs:label "FAIR Principles"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Fairness
+###  https://w3id.org/def/data-explainbility-ontology/Fairness
 :Fairness rdf:type owl:Class ;
           rdfs:subClassOf :Governance ,
                           [ rdf:type owl:Restriction ;
@@ -651,14 +651,14 @@ Additionally, the metadata should stay available even if the data are no longer 
           rdfs:label "Fairness"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/FeatureCreation
+###  https://w3id.org/def/data-explainbility-ontology/FeatureCreation
 :FeatureCreation rdf:type owl:Class ;
                  rdfs:subClassOf :FeatureEngineering ;
                  rdfs:comment "Feature creation is feature engineering that creates new features e.g. by combining them"@en ;
                  rdfs:label "Feature Creation"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/FeatureEngineering
+###  https://w3id.org/def/data-explainbility-ontology/FeatureEngineering
 :FeatureEngineering rdf:type owl:Class ;
                     rdfs:subClassOf :Methodology ,
                                     [ rdf:type owl:Restriction ;
@@ -674,21 +674,21 @@ Additionally, the metadata should stay available even if the data are no longer 
                     rdfs:label "Feature Engineering"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/FeatureExtraction
+###  https://w3id.org/def/data-explainbility-ontology/FeatureExtraction
 :FeatureExtraction rdf:type owl:Class ;
                    rdfs:subClassOf :FeatureEngineering ;
                    rdfs:comment "Feature extraction is about getting features out of the dataset that where not obvious or intended as features"@en ;
                    rdfs:label "Feature Extraction"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/FeatureSelection
+###  https://w3id.org/def/data-explainbility-ontology/FeatureSelection
 :FeatureSelection rdf:type owl:Class ;
                   rdfs:subClassOf :FeatureEngineering ;
                   rdfs:comment "Feature Selection is about selecting only the most usefull features"@en ;
                   rdfs:label "Feature Selection" .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Findable
+###  https://w3id.org/def/data-explainbility-ontology/Findable
 :Findable rdf:type owl:Class ;
           rdfs:subClassOf :FAIR ;
           rdfs:comment """Datasets should be findable.
@@ -698,7 +698,7 @@ Lastly they need to be registered or indexed in a searchable resource."""@en ;
           rdfs:label "Findablee"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Governance
+###  https://w3id.org/def/data-explainbility-ontology/Governance
 :Governance rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty :contributesTo ;
@@ -713,42 +713,42 @@ Lastly they need to be registered or indexed in a searchable resource."""@en ;
             rdfs:label "Governance"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/GroupFairness
+###  https://w3id.org/def/data-explainbility-ontology/GroupFairness
 :GroupFairness rdf:type owl:Class ;
                rdfs:subClassOf :Fairness ;
                rdfs:comment "Group fairness concerns the fairness towards whole groups" ;
                rdfs:label "Group Fairness"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Human-Before-The-Loop
+###  https://w3id.org/def/data-explainbility-ontology/Human-Before-The-Loop
 :Human-Before-The-Loop rdf:type owl:Class ;
                        rdfs:subClassOf :HumanInvolvment ;
                        rdfs:comment "Human-before-the-loop is the invovlment before the start of the ML pipeline"@en ;
                        rdfs:label "Human-Before-The-Loop"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Human-In-The-Loop
+###  https://w3id.org/def/data-explainbility-ontology/Human-In-The-Loop
 :Human-In-The-Loop rdf:type owl:Class ;
                    rdfs:subClassOf :HumanInvolvment ;
                    rdfs:comment "Human-in-the-loop is about a human actively being involved during the ML pipeline" ;
                    rdfs:label "Human-In-The-Loop" .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/HumanInvolvment
+###  https://w3id.org/def/data-explainbility-ontology/HumanInvolvment
 :HumanInvolvment rdf:type owl:Class ;
                  rdfs:subClassOf :Methodology ;
                  rdfs:comment "Huaman involvment, is the process of a human still being involved in the ML process"@en ;
                  rdfs:label "Human Invovlment"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/IndividualFairness
+###  https://w3id.org/def/data-explainbility-ontology/IndividualFairness
 :IndividualFairness rdf:type owl:Class ;
                     rdfs:subClassOf :Fairness ;
                     rdfs:comment "Individual fairness is concerned with the fairness regarding a single indivdual"@en ;
                     rdfs:label "Individual Fairness"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Interoperable
+###  https://w3id.org/def/data-explainbility-ontology/Interoperable
 :Interoperable rdf:type owl:Class ;
                rdfs:subClassOf :FAIR ;
                rdfs:comment """Data usually needs to be integrated with other data.
@@ -758,28 +758,28 @@ Lastly, they need to include qualified references to other data and metadata."""
                rdfs:label "Interoperable"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/KnowledgeGraphs
+###  https://w3id.org/def/data-explainbility-ontology/KnowledgeGraphs
 :KnowledgeGraphs rdf:type owl:Class ;
                  rdfs:subClassOf :Methodology ;
                  rdfs:comment "Knowledge graphs are a mediumto simply communicate domain specific knowledge" ;
                  rdfs:label "Knowledge Graphs"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Labeling
+###  https://w3id.org/def/data-explainbility-ontology/Labeling
 :Labeling rdf:type owl:Class ;
           rdfs:subClassOf :DatasetDescription ;
           rdfs:comment "Labels are tags on features of a dataset that describe the features more closely ideally containing metadata."@en ;
           rdfs:label "Labeling"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/LabelingBias
+###  https://w3id.org/def/data-explainbility-ontology/LabelingBias
 :LabelingBias rdf:type owl:Class ;
               rdfs:subClassOf :Biases ;
               rdfs:comment "Labeling bias is any bias that is introduced or reinforced by the labels of a dataset" ;
               rdfs:label "Labeling Bias"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Methodology
+###  https://w3id.org/def/data-explainbility-ontology/Methodology
 :Methodology rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                owl:onProperty :contributesTo ;
@@ -794,12 +794,12 @@ Lastly, they need to include qualified references to other data and metadata."""
              rdfs:label "Methodology"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/ModelBased
+###  https://w3id.org/def/data-explainbility-ontology/ModelBased
 :ModelBased rdf:type owl:Class ;
             rdfs:subClassOf :FeatureEngineering .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/ModelBasedFeatureCreation
+###  https://w3id.org/def/data-explainbility-ontology/ModelBasedFeatureCreation
 :ModelBasedFeatureCreation rdf:type owl:Class ;
                            owl:equivalentClass [ owl:intersectionOf ( :FeatureCreation
                                                                       :ModelBased
@@ -809,7 +809,7 @@ Lastly, they need to include qualified references to other data and metadata."""
                            rdfs:subClassOf :FeatureEngineering .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/ModelBasedFeatureExtraction
+###  https://w3id.org/def/data-explainbility-ontology/ModelBasedFeatureExtraction
 :ModelBasedFeatureExtraction rdf:type owl:Class ;
                              owl:equivalentClass [ owl:intersectionOf ( :FeatureExtraction
                                                                         :ModelBased
@@ -819,7 +819,7 @@ Lastly, they need to include qualified references to other data and metadata."""
                              rdfs:subClassOf :FeatureEngineering .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/ModelBasedFeatureSelection
+###  https://w3id.org/def/data-explainbility-ontology/ModelBasedFeatureSelection
 :ModelBasedFeatureSelection rdf:type owl:Class ;
                             owl:equivalentClass [ owl:intersectionOf ( :FeatureSelection
                                                                        :ModelBased
@@ -829,14 +829,14 @@ Lastly, they need to include qualified references to other data and metadata."""
                             rdfs:subClassOf :FeatureEngineering .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Point-WiseAnomalies
+###  https://w3id.org/def/data-explainbility-ontology/Point-WiseAnomalies
 :Point-WiseAnomalies rdf:type owl:Class ;
                      rdfs:subClassOf :Anomalies ;
                      rdfs:comment "Point-wise anomlies are single data points that deviate form the expected behavior"@en ;
                      rdfs:label "Point-Wise Anomalies"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Privacy
+###  https://w3id.org/def/data-explainbility-ontology/Privacy
 :Privacy rdf:type owl:Class ;
          rdfs:subClassOf :Governance ,
                          [ rdf:type owl:Restriction ;
@@ -852,21 +852,21 @@ Lastly, they need to include qualified references to other data and metadata."""
          rdfs:label "Privacy"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/PrivacyPreservingDataAnalysis
+###  https://w3id.org/def/data-explainbility-ontology/PrivacyPreservingDataAnalysis
 :PrivacyPreservingDataAnalysis rdf:type owl:Class ;
                                rdfs:subClassOf :ExploratoryDataAnalysis ;
                                rdfs:comment "Privacy preserving data analysis, is data anylis that weights privacy against analysation results." ;
                                rdfs:label "Privacy Preserving Data Analysis"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/RepresentationBias
+###  https://w3id.org/def/data-explainbility-ontology/RepresentationBias
 :RepresentationBias rdf:type owl:Class ;
                     rdfs:subClassOf :Biases ;
                     rdfs:comment "Representational Bias occurs if the dataset does not represent the society accuratley"@en ;
                     rdfs:label "Representation Bias"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Reusable
+###  https://w3id.org/def/data-explainbility-ontology/Reusable
 :Reusable rdf:type owl:Class ;
           rdfs:subClassOf :FAIR ;
           rdfs:comment """Lastly data should be reusable.
@@ -877,21 +877,21 @@ Lastly, they need to meet domain-relevant community standards."""@en ;
           rdfs:label "Reusable"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/SelectionBias
+###  https://w3id.org/def/data-explainbility-ontology/SelectionBias
 :SelectionBias rdf:type owl:Class ;
                rdfs:subClassOf :Biases ;
                rdfs:comment "Selection bias is b ias that is introduced by selecting data, consciously and unconsciously, that fits the expected outcome"@en ;
                rdfs:label "Selection Bias"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/StatisticalCharacterisation
+###  https://w3id.org/def/data-explainbility-ontology/StatisticalCharacterisation
 :StatisticalCharacterisation rdf:type owl:Class ;
                              rdfs:subClassOf :Characterization ;
                              rdfs:comment "Statistical Characterizations, are statisitics like mean, median, standard deviation"@en ;
                              rdfs:label "Statistical Characterization"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Transparency
+###  https://w3id.org/def/data-explainbility-ontology/Transparency
 :Transparency rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :contributesTo ;
@@ -919,7 +919,7 @@ Lastly, they need to meet domain-relevant community standards."""@en ;
               rdfs:label "Transparency"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Trust
+###  https://w3id.org/def/data-explainbility-ontology/Trust
 :Trust rdf:type owl:Class ;
        rdfs:subClassOf [ rdf:type owl:Restriction ;
                          owl:onProperty :isHinderedBy ;
@@ -941,7 +941,7 @@ Lastly, they need to meet domain-relevant community standards."""@en ;
        rdfs:label "Trust"@en .
 
 
-###  http://www.semanticweb.org/christianroters/ontologies/2025/7/data-explainability-ontology/Visualization
+###  https://w3id.org/def/data-explainbility-ontology/Visualization
 :Visualization rdf:type owl:Class ;
                rdfs:subClassOf :Methodology ,
                                [ rdf:type owl:Restriction ;
